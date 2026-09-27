@@ -1,0 +1,35 @@
+{
+  "name": "@borg0ai/plugins",
+  "version": "0.1.0",
+  "description": "Install open-plugin format plugins into agent tools, including OpenCode.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "opencode-plugins": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "format:check": "prettier --check \"index.ts\" \"lib/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "prettier": "^3",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
