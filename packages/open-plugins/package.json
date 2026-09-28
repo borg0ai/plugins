@@ -1,0 +1,26 @@
+{
+  "name": "@borg0ai/open-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Open Plugins 0.1 manifest and component parsing.",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\" \"vite.config.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^5",
+    "vitest": "^5.0.2"
+  }
+}

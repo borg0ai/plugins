@@ -1,0 +1,35 @@
+{
+  "name": "@borg0ai/plugins",
+  "version": "0.1.0",
+  "description": "Install open-plugin format plugins into agent tools, including OpenCode.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "bin": {
+    "plugins": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@borg0ai/open-plugins": "workspace:*"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format:check": "prettier --check \"index.ts\" \"lib/**/*.ts\" \"test/**/*.ts\" \"vite.config.ts\"",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^5",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  }
+}
