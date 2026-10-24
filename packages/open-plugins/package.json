@@ -2,6 +2,7 @@
   "name": "@borg0ai/open-plugins",
   "version": "0.1.0",
   "private": true,
+  "private": true,
   "type": "module",
   "description": "Open Plugins 0.1 manifest and component parsing.",
   "license": "Apache-2.0",

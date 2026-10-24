@@ -16,11 +16,10 @@ importers:
         version: 2.11.4
 
   apps/cli:
-    dependencies:
+    devDependencies:
       '@borg0ai/open-plugins':
         specifier: workspace:*
         version: link:../../packages/open-plugins
-    devDependencies:
       '@types/node':
         specifier: ^26.6.3
         version: 26.6.3

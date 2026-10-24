@@ -16,7 +16,9 @@
     "test:watch": "turbo run test:watch",
     "format": "prettier --write \"apps/**/*.ts\" \"*.{json,yaml}\"",
     "format:check": "turbo run format:check",
-    "clean": "turbo run clean"
+    "clean": "turbo run clean",
+    "lint": "pnpm format:check",
+    "release": "qingniao"
   },
   "devDependencies": {
     "prettier": "^3",
