@@ -1,7 +1,6 @@
 {
   "name": "@borg0ai/open-plugins",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Open Plugins 0.1 manifest and component parsing.",
